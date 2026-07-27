@@ -1,2 +1,2 @@
 cargo build --release
-mv target/release/neo-yom  PKGINSTALL/yom
+mv target/release/neo-yom  PKGINSTALL/neo-yom
