@@ -54,7 +54,7 @@ fn main() -> io::Result<()> {
             // Block execution here until the server finishes evaluation and sends a token back
             match stream.read(&mut buffer) {
                 Ok(0) => {
-                    let _ = writeln!(stderr, "error: FATAL: CLIENT CLOSED CONNECTION");
+                    let _ = writeln!(stderr, "error: FATAL: SERVER CLOSED CONNECTION");
                     break; // Server terminated or closed the socket
                 }
                 Ok(bytes_read) => {
